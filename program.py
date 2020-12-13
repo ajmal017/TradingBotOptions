@@ -1,13 +1,13 @@
-from Utils.getOptionExpiryDate import getWeekEndingDayDate;
+from Utils.getOptionExpiryDate import getOptionExpiryDate;
 from Enums.optionExpiryDays import OptionExpiryDays;
 
 
 #Current Week
-print( getWeekEndingDayDate(OptionExpiryDays.Monday.value, 0))
-print( getWeekEndingDayDate(OptionExpiryDays.Wednesday.value, 0))
-print( getWeekEndingDayDate(OptionExpiryDays.Friday.value, 0))
+print( getOptionExpiryDate(OptionExpiryDays.Monday.value, 0))
+print( getOptionExpiryDate(OptionExpiryDays.Wednesday.value, 0))
+print( getOptionExpiryDate(OptionExpiryDays.Friday.value, 0))
 
 #Next Week
-print( getWeekEndingDayDate(OptionExpiryDays.Monday.value, 1))
-print( getWeekEndingDayDate(OptionExpiryDays.Wednesday.value, 1))
-print( getWeekEndingDayDate(OptionExpiryDays.Friday.value, 1))
+print( getOptionExpiryDate(OptionExpiryDays.Monday.value, 1))
+print( getOptionExpiryDate(OptionExpiryDays.Wednesday.value, 1))
+print( getOptionExpiryDate(OptionExpiryDays.Friday.value, 1))
